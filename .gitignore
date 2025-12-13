@@ -1,0 +1,25 @@
+# Accounts - keep empty
+accounts/*
+!accounts/.gitkeep
+
+# Data - keep empty
+data/*
+!data/.gitkeep
+
+# Plugins - installed via .dependencies
+plugins/*
+!plugins/.gitkeep
+
+# Themes - installed via .dependencies
+themes/*
+!themes/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo

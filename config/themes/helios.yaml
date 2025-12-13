@@ -1,0 +1,20 @@
+# Enable versioning for demo
+versioning:
+  enabled: true
+  mode: explicit
+  auto_detect: true
+  default_version: v3
+  labels:
+    v1: "v1 (Legacy)"
+    v2: "v2 (Stable)"
+    v3: "v3 (Latest)"
+
+# Header menu
+header:
+  menu:
+    - route: /privacy
+      label: Privacy
+    - route: /contact
+      label: Contact
+    - route: /copyright
+      label: Copyright
