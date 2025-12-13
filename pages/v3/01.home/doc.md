@@ -1,5 +1,6 @@
 ---
 title: Home
+icon: tabler/home-2.svg
 body_classes: 'title-center title-h1h2'
 ---
 

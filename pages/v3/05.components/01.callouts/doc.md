@@ -6,120 +6,115 @@ taxonomy:
 
 # Callouts
 
-Callouts (also known as admonitions or alerts) help highlight important information in your documentation.
+Callouts (also known as alerts or admonitions) help highlight important information in your documentation. Helios uses GitHub-flavored markdown alert syntax for callouts.
 
 ## Available Types
 
-Helios supports five callout types, each with a distinct color and icon.
+Five callout types are available, each with a distinct color and icon.
 
 ### Note
 
 Use notes for general information that readers should be aware of:
 
-[notice]
-This is a **note** callout. Use it to highlight important information that readers should be aware of.
-[/notice]
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 
+[raw]
 ```markdown
-[notice]
-This is a note callout.
-[/notice]
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 ```
-
-### Info
-
-Info callouts provide helpful context or additional details:
-
-[info]
-This is an **info** callout. Use it for helpful context or supplementary information.
-[/info]
-
-```markdown
-[info]
-This is an info callout.
-[/info]
-```
+[/raw]
 
 ### Tip
 
 Tips share best practices or helpful suggestions:
 
-[tip]
-This is a **tip** callout. Use it to share best practices, shortcuts, or helpful suggestions.
-[/tip]
+> [!TIP]
+> Helpful advice for doing things better or more easily.
 
+[raw]
 ```markdown
-[tip]
-This is a tip callout.
-[/tip]
+> [!TIP]
+> Helpful advice for doing things better or more easily.
 ```
+[/raw]
+
+### Important
+
+Important callouts highlight key information users need:
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+[raw]
+```markdown
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+```
+[/raw]
 
 ### Warning
 
 Warnings alert readers to potential issues or caveats:
 
-[warning]
-This is a **warning** callout. Use it when there's a potential issue readers should be aware of.
-[/warning]
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
 
+[raw]
 ```markdown
-[warning]
-This is a warning callout.
-[/warning]
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
 ```
+[/raw]
 
-### Danger
+### Caution
 
-Danger callouts highlight critical information that could cause problems:
+Caution callouts advise about risks or negative outcomes:
 
-[danger]
-This is a **danger** callout. Use it for critical information that could lead to data loss or security issues.
-[/danger]
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 
+[raw]
 ```markdown
-[danger]
-This is a danger callout.
-[/danger]
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 ```
+[/raw]
 
 ## Markdown Support
 
-Callouts support full markdown inside:
+Callouts support full markdown inside, including formatting, lists, and code:
 
-[notice]
-You can use **bold**, *italic*, `code`, and even:
+> [!TIP]
+> You can use **bold**, *italic*, and `inline code` in callouts.
+>
+> - Bullet points work
+> - Multiple items supported
+>
+> ```javascript
+> // Code blocks too!
+> console.log('Hello');
+> ```
 
-- Bullet points
-- Lists
-- [Links](/components/callouts)
-
-```javascript
-// Code blocks too!
-console.log('Hello');
-```
-[/notice]
-
-## Custom Titles
-
-Add a custom title to any callout:
-
-[notice=Custom Title]
-This callout has a custom title instead of the default "Note".
-[/notice]
-
+[raw]
 ```markdown
-[notice=Custom Title]
-This callout has a custom title.
-[/notice]
+> [!TIP]
+> You can use **bold**, *italic*, and `inline code` in callouts.
+>
+> - Bullet points work
+> - Multiple items supported
+>
+> ```javascript
+> // Code blocks too!
+> console.log('Hello');
+> ```
 ```
+[/raw]
 
-## Styling
+## Best Practices
 
-Callout colors can be customized in your CSS:
-
-```css
-.callout-warning {
-    --callout-border-color: #f59e0b;
-    --callout-bg-color: #fef3c7;
-}
-```
+1. **Use sparingly** - Limit to one or two alerts per page to avoid overwhelming readers
+2. **Choose the right type** - Match the alert type to the importance of the message
+3. **Keep it brief** - Callouts work best with concise, actionable information
+4. **Don't nest alerts** - Alerts cannot be nested within other elements

@@ -24,9 +24,8 @@ curl https://api.example.com/users \
 3. Click "Create New Key"
 4. Copy and store your key securely
 
-[warning]
-API keys grant full access to your account. Never share them or commit them to version control.
-[/warning]
+> [!WARNING]
+> API keys grant full access to your account. Never share them or commit them to version control.
 
 ## OAuth 2.0
 

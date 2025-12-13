@@ -166,9 +166,8 @@ Maintain the same page structure across versions when possible. This ensures the
 Clearly mark deprecated features in older versions:
 
 ```markdown
-[warning]
-This feature is deprecated in v2. See the [Migration Guide](/docs/v2/migration).
-[/warning]
+> [!WARNING]
+> This feature is deprecated in v2. See the [Migration Guide](/docs/v2/migration).
 ```
 
 ### 3. Latest Version Default

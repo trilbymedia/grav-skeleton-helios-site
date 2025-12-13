@@ -119,19 +119,17 @@ Specify the language for syntax highlighting:
 
 ### Callouts
 
-Use the shortcode syntax for callout boxes:
+Use GitHub-flavored markdown alerts for callout boxes:
 
-```
-[notice]
-This is an informational notice.
-[/notice]
+```markdown
+> [!NOTE]
+> This is an informational note.
 
-[warning]
-This is a warning message.
-[/warning]
+> [!WARNING]
+> This is a warning message.
 ```
 
-See the [Callouts](/components/callouts) page for all available types.
+See the [Callouts](/v2/components/callouts) page for all available types.
 
 ## Testing Your Site
 
