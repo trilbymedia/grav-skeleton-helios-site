@@ -5,7 +5,7 @@ pages:
   theme: helios
 
 cache:
-  enabled: true
+  enabled: false
   check:
     method: file
 
