@@ -1,7 +1,7 @@
 ---
 title: API Reference
 template: chapter
-icon: tabler/api.svg
+icon: tabler/code.svg
 description: Complete REST API documentation with endpoints, parameters, and examples
 taxonomy:
     category:
