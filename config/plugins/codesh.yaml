@@ -1,4 +1,4 @@
-enabled: false
+enabled: true
 active: true
 theme_dark: helios-dark
 theme_light: helios-light
