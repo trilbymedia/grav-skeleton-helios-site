@@ -19,9 +19,9 @@ user/pages/
 ├── 02.getting-started/
 │   ├── chapter.md
 │   ├── 01.installation/
-│   │   └── default.md
+│   │   └── doc.md
 │   └── 02.configuration/
-│       └── default.md
+│       └── doc.md
 └── 03.guides/
     └── chapter.md
 ```
@@ -67,6 +67,8 @@ A section landing page that lists child pages:
 ---
 title: Section Name
 template: chapter
+icon: folder-open   # Optional icon from SVG Icons plugin
+description: Overview of this section  # Optional description
 ---
 
 # Section Name
@@ -85,13 +87,40 @@ template: api-endpoint
 api:
   method: POST
   path: /users
-  description: Creates a new user
+  description: Creates a new user account
   parameters:
     - name: email
       type: string
       required: true
+      description: User's email address
+    - name: name
+      type: string
+      required: true
+      description: User's display name
+  request_example: |
+    {
+      "email": "user@example.com",
+      "name": "John Doe"
+    }
+  response_example: |
+    {
+      "id": "usr_123",
+      "email": "user@example.com",
+      "name": "John Doe",
+      "created_at": "2024-01-15T10:30:00Z"
+    }
+  response_codes:
+    - code: 201
+      description: User created successfully
+    - code: 400
+      description: Invalid request body
+    - code: 409
+      description: Email already exists
 ---
 ```
+
+> [!TIP]
+> Use the **API Doc Import** plugin to automatically generate API endpoint pages from OpenAPI/Swagger specifications.
 
 ## Adding Content
 
@@ -109,13 +138,51 @@ Use markdown headings. They automatically appear in the on-page TOC:
 
 ### Code Blocks
 
-Specify the language for syntax highlighting:
+Helios supports code blocks using either standard markdown or the Codesh plugin for enhanced syntax highlighting.
+
+#### Markdown Code Blocks
+
+Use fenced code blocks with a language identifier:
 
     ```javascript
     function hello() {
         console.log('Hello, World!');
     }
     ```
+
+#### Codesh Shortcodes
+
+For advanced features like line highlighting, filenames, and tabbed groups, use the Codesh shortcode:
+
+[raw]
+```markdown
+[codesh lang="javascript" filename="hello.js" highlight="2"]
+function hello() {
+    console.log('Hello, World!');
+}
+[/codesh]
+```
+[/raw]
+
+Create tabbed code groups for multiple languages:
+
+[raw]
+```markdown
+[codesh-group sync="package-manager"]
+[codesh lang="bash" title="npm"]
+npm install my-package
+[/codesh]
+[codesh lang="bash" title="yarn"]
+yarn add my-package
+[/codesh]
+[codesh lang="bash" title="pnpm"]
+pnpm add my-package
+[/codesh]
+[/codesh-group]
+```
+[/raw]
+
+See the [Code Blocks](/v3/components/code-blocks) page for all Codesh features.
 
 ### Callouts
 
@@ -127,20 +194,25 @@ Use GitHub-flavored markdown alerts for callout boxes:
 
 > [!WARNING]
 > This is a warning message.
+
+> [!TIP]
+> This is a helpful tip.
 ```
 
 See the [Callouts](/v3/components/callouts) page for all available types.
 
 ## Testing Your Site
 
-Start the built-in PHP server:
+Start the Grav development server:
 
 ```bash
-cd /path/to/your/grav
-php -S localhost:8000 system/router.php
+bin/grav server
 ```
 
-Then open `http://localhost:8000` in your browser.
+This uses the Symfony CLI if installed, otherwise falls back to PHP's built-in server. Then open `http://localhost:8000` in your browser.
+
+> [!NOTE]
+> On first run, you may need to make the script executable: `chmod +x bin/grav`
 
 ## Building CSS
 
@@ -160,6 +232,6 @@ npm run dev
 
 ## Next Steps
 
-- Explore the [Guides](/guides) for in-depth tutorials
-- Check out the [Components](/components) for available UI elements
-- See the [API Reference](/api-reference) for API documentation examples
+- Explore the [Guides](/v3/guides) for in-depth tutorials
+- Check out the [Components](/v3/components) for available UI elements
+- See the [API Reference](/v3/api-reference) for API documentation examples

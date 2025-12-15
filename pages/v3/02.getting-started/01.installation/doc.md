@@ -41,11 +41,20 @@ Helios works best with the following plugins:
 | SimpleSearch | Yes | Powers the search functionality |
 | Shortcode Core | Recommended | Enables shortcode syntax for callouts and tabs |
 | SVG Icons | Recommended | Provides icon support throughout the theme |
+| Codesh | Recommended | Modern syntax highlighting with Shiki (replaces Prism.js) |
+| Page TOC | Recommended | Generates table of contents from headings |
+| API Doc Import | Optional | Import OpenAPI/Swagger specs as API documentation pages |
 
-Install them via GPM:
+Install the recommended plugins via GPM:
 
 ```bash
-bin/gpm install simplesearch shortcode-core svg-icons
+bin/gpm install simplesearch shortcode-core svg-icons codesh page-toc
+```
+
+For API documentation features, also install:
+
+```bash
+bin/gpm install api-doc-import
 ```
 
 ## Skeleton Installation
@@ -62,4 +71,4 @@ This gives you a ready-to-use documentation site with example content.
 
 ## Next Steps
 
-Once installed, proceed to [Configuration](/getting-started/configuration) to customize your theme.
+Once installed, proceed to [Configuration](/v3/getting-started/configuration) to customize your theme.
