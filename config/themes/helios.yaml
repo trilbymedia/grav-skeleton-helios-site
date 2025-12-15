@@ -1,3 +1,7 @@
+# Search
+search:
+  provider: simplesearch
+
 # Enable versioning for demo
 versioning:
   enabled: true
