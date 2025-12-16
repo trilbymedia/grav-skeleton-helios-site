@@ -12,19 +12,20 @@ Get your documentation site up and running in minutes.
 
 Helios uses Grav's standard page structure. Documentation pages are organized in numbered folders:
 
-```
-user/pages/
-├── 01.home/
-│   └── default.md
-├── 02.getting-started/
-│   ├── chapter.md
-│   ├── 01.installation/
-│   │   └── doc.md
-│   └── 02.configuration/
-│       └── doc.md
-└── 03.guides/
-    └── chapter.md
-```
+[doc-file-tree]
+- user/pages/
+    - v3/
+        - 01.home/
+            - default.md
+            - 02.getting-started/
+                - chapter.md
+                - 01.installation/
+                    - doc.md
+                - 02.configuration/
+                    - doc.md
+            - 03.guides/
+                - chapter.md
+[/doc-file-tree]
 
 The numeric prefixes control the order in the sidebar navigation.
 
