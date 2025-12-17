@@ -81,16 +81,16 @@ Helios integrates with SimpleSearch by default:
 
 ```yaml
 search:
-  provider: simplesearch    # simplesearch or yetisearch
+  provider: simplesearch    # simplesearch or yetisearch-pro
   keyboard_shortcut: true   # Enable Cmd+K / Ctrl+K
   placeholder: 'Search docs...'
 ```
 
-For premium search with YetiSearch:
+For premium search with YetiSearch Pro:
 
 ```yaml
 search:
-  provider: yetisearch
+  provider: yetisearch-pro
 ```
 
 ## Code Block Settings

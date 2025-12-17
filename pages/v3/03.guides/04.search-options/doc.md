@@ -6,7 +6,7 @@ taxonomy:
 
 # Search Options
 
-Helios supports two search providers: **SimpleSearch** (built-in) and **YetiSearch** (advanced). This guide covers configuration and features for both.
+Helios supports two search providers: **SimpleSearch** (built-in) and **YetiSearch Pro** (advanced). This guide covers configuration and features for both.
 
 ## Choosing a Search Provider
 
@@ -15,7 +15,7 @@ Configure your search provider in `user/config/themes/helios.yaml`:
 [codesh lang="yaml"]
 search:
   enabled: true
-  provider: simplesearch    # or 'yetisearch'
+  provider: simplesearch    # or 'yetisearch-pro'
   keyboard_shortcut: true   # Enable Cmd+K / Ctrl+K
   placeholder: 'Search documentation...'
   min_chars: 2
@@ -24,7 +24,7 @@ search:
 | Provider | Best For |
 |----------|----------|
 | `simplesearch` | Small to medium sites, quick setup, no indexing required |
-| `yetisearch` | Large sites, fuzzy search, advanced features, chunked results |
+| `yetisearch-pro` | Large sites, fuzzy search, advanced features, chunked results |
 
 ---
 
@@ -75,20 +75,20 @@ ignore_taxonomy:
 
 ---
 
-## YetiSearch
+## YetiSearch Pro
 
-YetiSearch is an advanced local search engine with fuzzy matching, chunked indexing, and relevance scoring.
+YetiSearch Pro is an advanced local search engine with fuzzy matching, chunked indexing, and relevance scoring.
 
 ### Installation
 
-YetiSearch is a premium plugin. Once installed, enable it:
+YetiSearch Pro is a premium plugin. Once installed, enable it:
 
 [codesh lang="yaml"]
-# user/config/plugins/yetisearch.yaml
+# user/config/plugins/yetisearch-pro.yaml
 enabled: true
 
 engine:
-  storage_dir: 'user://data/yetisearch'
+  storage_dir: 'user://data/yetisearch-pro'
   index_prefix: 'docs_'
 
 indexes:
@@ -104,23 +104,23 @@ Then configure Helios to use it:
 [codesh lang="yaml"]
 # user/config/themes/helios.yaml
 search:
-  provider: yetisearch
+  provider: yetisearch-pro
 [/codesh]
 
 ### Indexing Content
 
-YetiSearch requires content to be indexed before searching. Use the CLI to build the index:
+YetiSearch Pro requires content to be indexed before searching. Use the CLI to build the index:
 
 [codesh lang="bash" title="Index all content"]
-bin/plugin yetisearch index --index pages
+bin/plugin yetisearch-pro index --index pages
 [/codesh]
 
 [codesh lang="bash" title="Flush and rebuild index"]
-bin/plugin yetisearch index --index pages --flush
+bin/plugin yetisearch-pro index --index pages --flush
 [/codesh]
 
 [codesh lang="bash" title="Index specific language/version"]
-bin/plugin yetisearch index --index pages --lang v3 --flush
+bin/plugin yetisearch-pro index --index pages --lang v3 --flush
 [/codesh]
 
 > [!TIP]
@@ -128,10 +128,10 @@ bin/plugin yetisearch index --index pages --lang v3 --flush
 
 ### Realtime Indexing
 
-YetiSearch can automatically update the index when pages are saved in the Admin panel:
+YetiSearch Pro can automatically update the index when pages are saved in the Admin panel:
 
 [codesh lang="yaml"]
-# user/config/plugins/yetisearch.yaml
+# user/config/plugins/yetisearch-pro.yaml
 _yetisearch_indexing:
   realtime: true              # Auto-index on page save
   smart_indexing: true        # Skip unchanged documents
@@ -139,7 +139,7 @@ _yetisearch_indexing:
 
 ### Admin Dashboard
 
-YetiSearch provides an admin dashboard for monitoring index status and triggering reindexing. Access it via **Admin > YetiSearch**.
+YetiSearch Pro provides an admin dashboard for monitoring index status and triggering reindexing. Access it via **Admin > YetiSearch Pro**.
 
 From the dashboard you can:
 - View index statistics (document count, size, last updated)
@@ -149,9 +149,9 @@ From the dashboard you can:
 
 ---
 
-## Excluding Content from YetiSearch
+## Excluding Content from YetiSearch Pro
 
-YetiSearch provides flexible options for excluding content from the search index.
+YetiSearch Pro provides flexible options for excluding content from the search index.
 
 ### Page-Level Exclusion
 
@@ -214,9 +214,9 @@ You can also control indexing via the Admin panel. Edit any page and look for th
 
 ---
 
-## Search Query Tuning (YetiSearch)
+## Search Query Tuning (YetiSearch Pro)
 
-YetiSearch supports advanced query configuration for fine-tuning relevance:
+YetiSearch Pro supports advanced query configuration for fine-tuning relevance:
 
 [codesh lang="yaml"]
 indexes:
@@ -246,27 +246,27 @@ indexes:
 
 ---
 
-## CLI Query Testing (YetiSearch)
+## CLI Query Testing (YetiSearch Pro)
 
 Test searches directly from the command line:
 
 [codesh lang="bash" title="Basic search"]
-bin/plugin yetisearch query --q "installation guide" --index pages
+bin/plugin yetisearch-pro query --q "installation guide" --index pages
 [/codesh]
 
 [codesh lang="bash" title="Fuzzy search with filters"]
-bin/plugin yetisearch query --q "configration" --fuzzy --index pages
+bin/plugin yetisearch-pro query --q "configration" --fuzzy --index pages
 [/codesh]
 
 [codesh lang="bash" title="JSON output for debugging"]
-bin/plugin yetisearch query --q "theme" --index pages --raw
+bin/plugin yetisearch-pro query --q "theme" --index pages --raw
 [/codesh]
 
 ---
 
 ## Comparison
 
-| Feature | SimpleSearch | YetiSearch |
+| Feature | SimpleSearch | YetiSearch Pro |
 |---------|--------------|------------|
 | Setup complexity | Low | Medium |
 | Indexing required | No | Yes |
@@ -288,17 +288,17 @@ bin/plugin yetisearch query --q "theme" --index pages --raw
 - Check that pages have the correct taxonomy (e.g., `category: docs`)
 - Verify `search_content` is set to `rendered` if using shortcodes
 
-**YetiSearch:**
-- Ensure the index has been built: `bin/plugin yetisearch index --index pages`
+**YetiSearch Pro:**
+- Ensure the index has been built: `bin/plugin yetisearch-pro index --index pages`
 - Check that pages aren't excluded via `yetisearch.ignore: true`
-- Verify the index exists in `user/data/yetisearch/`
+- Verify the index exists in `user/data/yetisearch-pro/`
 
-### YetiSearch index out of date
+### YetiSearch Pro index out of date
 
 Rebuild the index after major content changes:
 
 [codesh lang="bash"]
-bin/plugin yetisearch index --index pages --flush
+bin/plugin yetisearch-pro index --index pages --flush
 [/codesh]
 
 Or enable realtime indexing for automatic updates.
