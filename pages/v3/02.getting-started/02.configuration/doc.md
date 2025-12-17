@@ -137,20 +137,13 @@ search:
   provider: yetisearch
 ```
 
-## Code Block Settings
+## Code Blocks
 
-Configure syntax highlighting and code features:
+Helios uses the [Codesh plugin](https://github.com/trilbymedia/grav-plugin-codesh) for syntax highlighting. Codesh provides server-side highlighting using Phiki (a PHP port of Shiki), supporting 200+ languages and 70+ VS Code themes with no JavaScript required.
 
-```yaml
-code:
-  theme: github-dark    # github-dark, dracula, nord, one-dark
-  copy_button: true     # Show copy button
-  line_numbers: false   # Show line numbers by default
-  word_wrap: false      # Enable word wrap
-```
+Configure code block settings in the Codesh plugin configuration, not in the theme.
 
-> [!NOTE]
-> When using the Codesh plugin, syntax highlighting is handled by Shiki instead of Prism.js, providing more accurate highlighting for modern languages.
+See the [Code Blocks](/components/code-blocks) documentation for usage details.
 
 ## Versioning
 

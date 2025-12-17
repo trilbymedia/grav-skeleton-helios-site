@@ -93,17 +93,6 @@ search:
   provider: yetisearch-pro
 ```
 
-## Code Block Settings
-
-Configure syntax highlighting and code features:
-
-```yaml
-code:
-  theme: github-dark    # Prism.js theme
-  copy_button: true     # Show copy button
-  line_numbers: false   # Show line numbers by default
-```
-
 ## Versioning
 
 Enable folder-based documentation versioning:

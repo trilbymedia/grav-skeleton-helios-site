@@ -8,7 +8,7 @@ taxonomy:
 
 [Codesh](https://github.com/trilbymedia/grav-plugin-codesh) for Grav is a plugin that provides server-side syntax highlighting for code blocks in your Grav site.
 
-Codesh provides server-side syntax highlighting using [Phiki](https://phiki.dev), a PHP port of Shiki that uses TextMate grammars and VS Code themes. Unlike Prism.js, all highlighting happens on the server - no JavaScript required.
+Codesh provides server-side syntax highlighting using [Phiki](https://phiki.dev), a PHP port of Shiki that uses TextMate grammars and VS Code themes. All highlighting happens on the server - no JavaScript required, faster page loads, and perfect SEO.
 
 ## Basic Syntax Highlighting
 
@@ -384,17 +384,17 @@ echo $greeting;
 
 Tab selections are automatically persisted, so they survive page reloads.
 
-## Comparison: Codesh vs Prism
+## Why Codesh?
 
-| Feature | Codesh (Phiki) | Prism.js |
-|---------|----------------|----------|
-| Rendering | Server-side | Client-side |
-| JavaScript Required | No | Yes |
-| Languages | 200+ | 100+ |
-| Themes | 70+ VS Code themes | ~20 themes |
-| Line Highlighting | Built-in | Plugin required |
-| Line Focus | Built-in | Not available |
-| Grammar Engine | TextMate | Custom |
+| Feature | Benefit |
+|---------|---------|
+| Server-side rendering | No JavaScript required, instant display |
+| 200+ languages | Comprehensive language support |
+| 70+ VS Code themes | Beautiful, familiar syntax themes |
+| Built-in line highlighting | Highlight specific lines easily |
+| Built-in line focus | Draw attention to key code sections |
+| TextMate grammars | Accurate, industry-standard highlighting |
+| SEO-friendly | Code is in the HTML, fully indexable |
 
 ## Shortcode Attributes Reference
 

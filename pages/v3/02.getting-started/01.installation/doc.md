@@ -41,7 +41,7 @@ Helios works best with the following plugins:
 | SimpleSearch | Yes | Powers the search functionality |
 | Shortcode Core | Recommended | Enables shortcode syntax for callouts and tabs |
 | SVG Icons | Recommended | Provides icon support throughout the theme |
-| Codesh | Recommended | Modern syntax highlighting with Shiki (replaces Prism.js) |
+| Codesh | Recommended | Server-side syntax highlighting with 200+ languages and VS Code themes |
 | Page TOC | Recommended | Generates table of contents from headings |
 | API Doc Import | Optional | Import OpenAPI/Swagger specs as API documentation pages |
 
