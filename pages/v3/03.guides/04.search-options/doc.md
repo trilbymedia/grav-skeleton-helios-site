@@ -184,12 +184,17 @@ This is useful for excluding entire sections like internal notes or draft conten
 
 ### Content-Level Exclusion
 
-To exclude specific content within a page while indexing the rest, use the `[yetisearch]` shortcode:
+To exclude specific content within a page while indexing the rest, use the `[raw][yetisearch=ignore][/raw]` shortcode:
+
+[yetisearch=ignore]
+This content will NOT appear in search results. Use this for sensitive information, admin notes,
+or content that shouldn't be discoverable via search. keyword to search for: Flibbertigibbet
+[/yetisearch]
 
 [codesh lang="markdown"]
 This paragraph will be indexed and searchable.
 
-[yetisearch ignore]
+[yetisearch=ignore]
 This content will NOT appear in search results.
 Use this for sensitive information, admin notes,
 or content that shouldn't be discoverable via search.
@@ -201,7 +206,7 @@ This paragraph will also be indexed.
 The excluded content still renders normally on the page—it's only hidden from search results.
 
 > [!NOTE]
-> The `[yetisearch ignore]` shortcode requires the `shortcode-core` plugin to be installed.
+> The `[raw][yetisearch=ignore][raw]` shortcode requires the `shortcode-core` plugin to be installed.
 
 ### Admin UI
 

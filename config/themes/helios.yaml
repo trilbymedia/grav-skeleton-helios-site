@@ -1,6 +1,6 @@
 # Search
 search:
-  provider: yetisearch
+  provider: yetisearch-pro
 
 # Enable versioning for demo
 versioning:

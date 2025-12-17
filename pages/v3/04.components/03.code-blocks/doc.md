@@ -12,7 +12,10 @@ Codesh provides server-side syntax highlighting using [Phiki](https://phiki.dev)
 
 ## Basic Syntax Highlighting
 
-Use the `[codesh]` shortcode with the language as a shorcode parameter:
+> [!TIP]
+> View the markdown source for this page to see the raw syntax.
+
+Use the `[raw][codesh][/raw]` shortcode with the language as a shorcode parameter rusulting in:
 
 [codesh=javascript]
 function greet(name) {
@@ -46,13 +49,12 @@ echo $message;
 
 For compatibility with markdown editors, you can wrap standard fenced code blocks:
 
-[codesh]
+
 ```rust
 fn main() {
     println!("Hello, Rustaceans!");
 }
 ```
-[/codesh]
 
 ## Supported Languages
 
@@ -66,6 +68,7 @@ Codesh supports 200+ languages via TextMate grammars, including:
 | PHP | `php` |
 | Ruby | `ruby`, `rb` |
 | Go | `go` |
+| Grav | `grav` |
 | Rust | `rust`, `rs` |
 | Shell/Bash | `bash`, `shell`, `sh` |
 | SQL | `sql` |

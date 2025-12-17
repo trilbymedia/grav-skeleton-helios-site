@@ -33,7 +33,7 @@ The numeric prefixes control the order in the sidebar navigation.
 
 Create a new markdown file with YAML frontmatter:
 
-```markdown
+```grav
 ---
 title: My Page Title
 taxonomy:
@@ -53,7 +53,7 @@ Helios includes several templates:
 
 The standard documentation page with sidebar, content, and TOC:
 
-```markdown
+```grav
 ---
 title: Regular Page
 template: default
@@ -64,7 +64,7 @@ template: default
 
 A section landing page that lists child pages:
 
-```markdown
+```grav
 ---
 title: Section Name
 template: chapter
@@ -81,7 +81,7 @@ Introduction to this section...
 
 For API documentation with method badges and parameter tables:
 
-```markdown
+```grav
 ---
 title: Create User
 template: api-endpoint
@@ -129,7 +129,7 @@ api:
 
 Use markdown headings. They automatically appear in the on-page TOC:
 
-```markdown
+```grav
 ## Main Section
 
 ### Subsection
@@ -156,7 +156,7 @@ Use fenced code blocks with a language identifier:
 For advanced features like line highlighting, filenames, and tabbed groups, use the Codesh shortcode:
 
 [raw]
-```markdown
+```grav
 [codesh lang="javascript" filename="hello.js" highlight="2"]
 function hello() {
     console.log('Hello, World!');
@@ -168,7 +168,7 @@ function hello() {
 Create tabbed code groups for multiple languages:
 
 [raw]
-```markdown
+```grav
 [codesh-group sync="package-manager"]
 [codesh lang="bash" title="npm"]
 npm install my-package
@@ -189,7 +189,7 @@ See the [Code Blocks](/v3/components/code-blocks) page for all Codesh features.
 
 Use GitHub-flavored markdown alerts for callout boxes:
 
-```markdown
+```grav
 > [!NOTE]
 > This is an informational note.
 
