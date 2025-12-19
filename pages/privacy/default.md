@@ -1,9 +1,11 @@
 ---
 title: Privacy Policy
+process:
+    twig: true
 ---
 
 
-This privacy policy applies to the use of the [{{ site.title }}]({{ site.url }}) website and any related services (the "Service"). This policy is powered by [iubenda](https://www.iubenda.com/privacy-policy/46375402).
+This privacy policy applies to the use of the [Helios](/) website and any related services (the "Service"). 
 
 ### Definitions and key terms
 
