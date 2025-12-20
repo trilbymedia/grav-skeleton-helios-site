@@ -163,18 +163,18 @@ class UserController extends AbstractController
 
 ## Hide Language Badge
 
-Hide the language badge entirely with `show-lang="false"`:
+Hide the language badge entirely with `hide-lang="true"`:
 
-[codesh lang="bash" show-lang="false"]
+[codesh lang="bash" hide-lang="true"]
 npm install
 npm run build
 [/codesh]
 
 ## Minimal Mode (No Header)
 
-Hide the entire header bar for a super minimal look with `header="false"`:
+Hide the entire header bar for a super minimal look with `hide-header="true"`:
 
-[codesh lang="javascript" header="false"]
+[codesh lang="javascript" hide-header="true"]
 const minimal = true;
 console.log('No header, just code');
 [/codesh]
@@ -303,7 +303,7 @@ $ npm run build
 
 Show code changes with diff syntax:
 
-[codesh=diff]
+[codesh diff=true]
 - const greeting = 'Hello';
 + const greeting = 'Hello, World!';
 
@@ -407,8 +407,8 @@ Tab selections are automatically persisted, so they survive page reloads.
 | `highlight` / `hl` | Lines to highlight | `highlight="1,3-5"` |
 | `focus` | Lines to focus | `focus="2-4"` |
 | `title` | Filename or title to display | `title="config.yaml"` |
-| `show-lang` | Show/hide language badge | `show-lang="false"` |
-| `header` | Show/hide entire header | `header="false"` |
+| `hide-lang` | Hide the language badge | `hide-lang="true"` |
+| `hide-header` | Hide the header bar | `hide-header="true"` |
 | `class` | Additional CSS class | `class="my-class"` |
 
 ### Code Group Attributes
