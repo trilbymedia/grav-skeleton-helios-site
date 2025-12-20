@@ -1,7 +1,13 @@
 ---
-title: Code Blocks
+title: 'Code Blocks'
 taxonomy:
-    category: docs
+    category:
+        - docs
+sitemap:
+    lastmod: '20-12-2025 21:15'
+yetisearch-pro:
+    index-page: true
+    index-children: true
 ---
 
 # Server-Side Syntax Highlighting
@@ -17,7 +23,7 @@ Codesh provides server-side syntax highlighting using [Phiki](https://phiki.dev)
 
 Use the `[raw][codesh][/raw]` shortcode with the language as a shorcode parameter rusulting in:
 
-[codesh=javascript]
+[codesh =javascript]
 function greet(name) {
     return `Hello, ${name}!`;
 }
@@ -25,16 +31,14 @@ function greet(name) {
 const message = greet('World');
 console.log(message);
 [/codesh]
-
-[codesh=python]
+[codesh =python]
 def greet(name):
     return f"Hello, {name}!"
 
 message = greet("World")
 print(message)
 [/codesh]
-
-[codesh=php]
+[codesh =php]
 <?php
 
 function greet($name) {
@@ -44,11 +48,9 @@ function greet($name) {
 $message = greet('World');
 echo $message;
 [/codesh]
-
 ## Wrapping Markdown Code Blocks
 
 For compatibility with markdown editors, you can wrap standard fenced code blocks:
-
 
 ```rust
 fn main() {
@@ -61,7 +63,7 @@ fn main() {
 Codesh supports 200+ languages via TextMate grammars, including:
 
 | Language | Identifier |
-|----------|------------|
+| --- | --- |
 | JavaScript | `javascript`, `js` |
 | TypeScript | `typescript`, `ts` |
 | Python | `python`, `py` |
@@ -79,7 +81,7 @@ Codesh supports 200+ languages via TextMate grammars, including:
 | Markdown | `markdown`, `md` |
 | Swift | `swift` |
 | Kotlin | `kotlin`, `kt` |
-| And 180+ more... | |
+| And 180+ more... |  |
 
 ## Line Numbers
 
@@ -92,7 +94,6 @@ const b = 2;
 const c = a + b;
 console.log(c);
 [/codesh]
-
 ### Custom Starting Line
 
 Start from a specific line number:
@@ -104,7 +105,6 @@ def calculate(x, y):
 
 result = calculate(5, 3)
 [/codesh]
-
 ## Line Highlighting
 
 Highlight specific lines to draw attention using `highlight` or `hl`:
@@ -121,8 +121,8 @@ function processData(data) {
     return mapped;
 }
 [/codesh]
-
 Syntax: `highlight="LINE_NUMBERS"` where LINE_NUMBERS can be:
+
 - Single lines: `1,3,5`
 - Ranges: `2-4`
 - Combined: `1,3-5,8`
@@ -140,7 +140,6 @@ function example() {
     // cleanup code
 }
 [/codesh]
-
 This is useful for drawing attention to the most important parts of longer code examples.
 
 ## Title/Filename Display
@@ -160,7 +159,6 @@ class UserController extends AbstractController
     }
 }
 [/codesh]
-
 ## Hide Language Badge
 
 Hide the language badge entirely with `hide-lang="true"`:
@@ -169,7 +167,6 @@ Hide the language badge entirely with `hide-lang="true"`:
 npm install
 npm run build
 [/codesh]
-
 ## Minimal Mode (No Header)
 
 Hide the entire header bar for a super minimal look with `hide-header="true"`:
@@ -178,7 +175,6 @@ Hide the entire header bar for a super minimal look with `hide-header="true"`:
 const minimal = true;
 console.log('No header, just code');
 [/codesh]
-
 ## Automatic Light/Dark Mode
 
 Codesh automatically detects your theme's light/dark mode setting and uses the appropriate syntax theme. When you toggle the theme, the code blocks switch automatically.
@@ -191,6 +187,7 @@ Codesh automatically detects your theme's light/dark mode setting and uses the a
 Override the default theme per code block:
 
 ### GitHub Dark (default)
+
 [codesh lang="typescript" theme="github-dark"]
 interface User {
     id: number;
@@ -198,8 +195,8 @@ interface User {
     email: string;
 }
 [/codesh]
-
 ### Dracula
+
 [codesh lang="typescript" theme="dracula"]
 interface User {
     id: number;
@@ -207,8 +204,8 @@ interface User {
     email: string;
 }
 [/codesh]
-
 ### Nord
+
 [codesh lang="typescript" theme="nord"]
 interface User {
     id: number;
@@ -216,8 +213,8 @@ interface User {
     email: string;
 }
 [/codesh]
-
 ### One Dark Pro
+
 [codesh lang="typescript" theme="one-dark-pro"]
 interface User {
     id: number;
@@ -225,8 +222,8 @@ interface User {
     email: string;
 }
 [/codesh]
-
 ### Tokyo Night
+
 [codesh lang="typescript" theme="tokyo-night"]
 interface User {
     id: number;
@@ -234,8 +231,8 @@ interface User {
     email: string;
 }
 [/codesh]
-
 ### Catppuccin Mocha
+
 [codesh lang="typescript" theme="catppuccin-mocha"]
 interface User {
     id: number;
@@ -243,8 +240,8 @@ interface User {
     email: string;
 }
 [/codesh]
-
 ### Rose Pine
+
 [codesh lang="typescript" theme="rose-pine"]
 interface User {
     id: number;
@@ -252,8 +249,8 @@ interface User {
     email: string;
 }
 [/codesh]
-
 ### GitHub Light
+
 [codesh lang="typescript" theme="github-light"]
 interface User {
     id: number;
@@ -261,13 +258,12 @@ interface User {
     email: string;
 }
 [/codesh]
-
 ## Available Themes
 
 Codesh includes 70+ VS Code themes:
 
 | Dark Themes | Light Themes |
-|-------------|--------------|
+| --- | --- |
 | `github-dark`, `github-dark-dimmed` | `github-light` |
 | `dracula`, `dracula-soft` | `one-light` |
 | `nord` | `solarized-light` |
@@ -279,17 +275,17 @@ Codesh includes 70+ VS Code themes:
 | `material-theme-*` variants | `material-theme-lighter` |
 | `vitesse-dark`, `vitesse-black` | `snazzy-light` |
 | `ayu-dark` | `everforest-light` |
-| `night-owl` | |
-| `poimandres` | |
-| `houston` | |
-| `synthwave-84` | |
-| `vesper` | |
+| `night-owl` |  |
+| `poimandres` |  |
+| `houston` |  |
+| `synthwave-84` |  |
+| `vesper` |  |
 
 ## Terminal Output
 
 Use `bash` or `shell` for terminal commands:
 
-[codesh=bash]
+[codesh =bash]
 $ npm install codesh-plugin
 + codesh-plugin@1.0.0
 added 10 packages in 2.1s
@@ -298,12 +294,11 @@ $ npm run build
 > Building assets...
 > Done in 1.2s
 [/codesh]
-
 ## Diff Highlighting
 
-Show code changes with diff syntax:
+Show code changes with diff (`diff=true`) syntax:
 
-[codesh diff=true]
+[codesh diff="true"]
 - const greeting = 'Hello';
 + const greeting = 'Hello, World!';
 
@@ -312,7 +307,6 @@ function sayHello() {
 +   console.log(`${greeting} How are you?`);
 }
 [/codesh]
-
 ## Code Groups
 
 Display multiple code examples in a tabbed interface. Perfect for showing the same functionality in different languages.
@@ -342,8 +336,8 @@ function greet($name) {
 
 echo greet("World");
 [/codesh]
-[/codesh-group]
 
+[/codesh-group]
 ### Synced Code Groups
 
 Use the `sync` attribute to synchronize tab selection across multiple code groups on the same page. When you select a tab in one group, all groups with the same sync key switch to match.
@@ -363,8 +357,8 @@ greeting = f"Hello, {name}!"
 $name = "World";
 $greeting = "Hello, {$name}!";
 [/codesh]
-[/codesh-group]
 
+[/codesh-group]
 **Output:**
 
 [codesh-group sync="lang"]
@@ -380,14 +374,14 @@ print(greeting)
 echo $greeting;
 // Output: Hello, World!
 [/codesh]
-[/codesh-group]
 
+[/codesh-group]
 Tab selections are automatically persisted, so they survive page reloads.
 
 ## Why Codesh?
 
 | Feature | Benefit |
-|---------|---------|
+| --- | --- |
 | Server-side rendering | No JavaScript required, instant display |
 | 200+ languages | Comprehensive language support |
 | 70+ VS Code themes | Beautiful, familiar syntax themes |
@@ -399,7 +393,7 @@ Tab selections are automatically persisted, so they survive page reloads.
 ## Shortcode Attributes Reference
 
 | Attribute | Description | Example |
-|-----------|-------------|---------|
+| --- | --- | --- |
 | `lang` | Programming language | `lang="php"` |
 | `theme` | Override syntax theme | `theme="dracula"` |
 | `line-numbers` | Show line numbers | `line-numbers="true"` |
@@ -414,14 +408,14 @@ Tab selections are automatically persisted, so they survive page reloads.
 ### Code Group Attributes
 
 | Attribute | Description | Example |
-|-----------|-------------|---------|
+| --- | --- | --- |
 | `sync` | Sync key for tab synchronization | `sync="lang"` |
 
 ## Configuration
 
 Configure defaults in `user/config/plugins/codesh.yaml`:
 
-[codesh=yaml]
+[codesh =yaml]
 enabled: true
 active: true
 theme_dark: github-dark     # Theme for dark mode
