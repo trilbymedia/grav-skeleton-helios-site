@@ -5,9 +5,7 @@ taxonomy:
         - docs
 sitemap:
     lastmod: '20-12-2025 21:15'
-yetisearch-pro:
-    index-page: true
-    index-children: true
+yetisearch-pro: {  }
 ---
 
 # Server-Side Syntax Highlighting
