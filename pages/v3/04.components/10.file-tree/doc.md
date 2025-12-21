@@ -189,6 +189,62 @@ A typical Grav project structure:
 - ...
 [/doc-file-tree]
 
+## CLI Tree Format
+
+You can also paste output directly from the `tree` command. The shortcode automatically detects the ASCII tree characters (`├──`, `└──`, `│`) and parses them:
+
+[doc-file-tree]
+.
+├── assets
+│   ├── page-toc-anchors.css
+│   ├── page-toc-anchors.js
+│   └── page-toc.png
+├── blueprints
+│   └── page-toc.yaml
+├── classes
+│   └── PageToc.php
+├── blueprints.yaml
+├── CHANGELOG.md
+└── page-toc.php
+[/doc-file-tree]
+
+[raw]
+```markdown
+[doc-file-tree]
+.
+├── assets
+│   ├── page-toc-anchors.css
+│   ├── page-toc-anchors.js
+│   └── page-toc.png
+├── blueprints
+│   └── page-toc.yaml
+├── classes
+│   └── PageToc.php
+├── blueprints.yaml
+├── CHANGELOG.md
+└── page-toc.php
+[/doc-file-tree]
+```
+[/raw]
+
+Symlinks are automatically detected and shown as comments:
+
+[doc-file-tree]
+├── admin -> /Projects/grav/grav-plugin-admin
+├── flex-objects -> /Projects/grav/grav-plugin-flex-objects
+└── login -> /Projects/grav/grav-plugin-login
+[/doc-file-tree]
+
+[raw]
+```markdown
+[doc-file-tree]
+├── admin -> /Projects/grav/grav-plugin-admin
+├── flex-objects -> /Projects/grav/grav-plugin-flex-objects
+└── login -> /Projects/grav/grav-plugin-login
+[/doc-file-tree]
+```
+[/raw]
+
 ## Syntax Reference
 
 | Syntax | Description |
@@ -200,6 +256,8 @@ A typical Grav project structure:
 | `- filename comment text` | File with comment |
 | `- ...` | Placeholder for more files |
 | 4-space indent | Nested items (standard markdown) |
+| `├──`, `└──`, `│` | CLI tree format (auto-detected) |
+| `name -> target` | Symlink (CLI tree format) |
 
 ## Supported File Icons
 
