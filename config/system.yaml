@@ -1,5 +1,5 @@
 home:
-  alias: '/v3'
+  alias: '/v3/home'
 
 pages:
   theme: helios
