@@ -14,12 +14,12 @@ Helios provides a flexible navigation system with sidebar, breadcrumbs, and on-p
 
 The sidebar automatically reflects your page structure. Pages are ordered by their folder prefix:
 
-```
+[doc-file-tree]
 user/pages/
 ├── 01.getting-started/    # Shows first
 ├── 02.guides/             # Shows second
 └── 03.api/                # Shows third
-```
+[/doc-file-tree]
 
 ### Controlling Visibility
 

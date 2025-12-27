@@ -11,8 +11,7 @@ Helios supports folder-based documentation versioning, allowing you to maintain 
 ## Folder Structure
 
 Organize your documentation by version using folders:
-
-```
+[doc-file-tree]
 user/pages/
 ├── docs/
 │   ├── v1/
@@ -23,7 +22,7 @@ user/pages/
 │       ├── getting-started/
 │       ├── guides/
 │       └── api/
-```
+[/doc-file-tree]
 
 ## Configuration
 
@@ -121,20 +120,20 @@ This helps users always know which version they're viewing.
 
 Each version can have its own configuration by creating a version-specific config file:
 
-```
+[doc-file-tree]
 user/config/themes/helios/
 ├── v1.yaml
 └── v2.yaml
-```
+[/doc-file-tree]
 
 ## Migration Guide Pattern
 
 When releasing a new version, create a migration guide:
 
-```
+[doc-file-tree]
 docs/v2/migration/
 └── default.md
-```
+[/doc-file-tree]
 
 ```markdown
 ---
@@ -183,14 +182,14 @@ versioning:
 
 For very old versions, consider archiving to a separate section:
 
-```
+[doc-file-tree]
 docs/
 ├── v3/          # Current
-├── v2/          # Previous
+├── v2/          # Previous2
 └── archived/
     ├── v1/
     └── v0/
-```
+[/doc-file-tree]
 
 ### 5. Cross-Version Links
 
