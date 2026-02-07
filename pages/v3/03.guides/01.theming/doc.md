@@ -28,7 +28,7 @@ When `selector` is enabled, a toggle button appears in the header allowing visit
 
 ## Colors
 
-Helios exposes six color settings that let you brand the theme without touching CSS. These control links, buttons, badges, and other UI accents throughout the theme.
+Helios exposes eight color settings that let you brand the theme without touching CSS. These control links, buttons, badges, and other UI accents throughout the theme.
 
 ### Light Mode Colors
 
@@ -36,6 +36,7 @@ Helios exposes six color settings that let you brand the theme without touching 
 colors:
   primary: '#3B82F6'         # Primary brand color (default: blue-500)
   primary_hover: '#2563EB'   # Hover state for primary color (default: blue-600)
+  primary_text: '#FFFFFF'    # Text color on primary backgrounds (default: white)
   accent: '#8B5CF6'          # Accent color for highlights (default: violet-500)
 ```
 
@@ -45,10 +46,20 @@ colors:
 colors:
   primary_dark: '#60A5FA'          # Primary color in dark mode (default: blue-400)
   primary_dark_hover: '#93C5FD'    # Hover state in dark mode (default: blue-300)
+  primary_dark_text: '#111827'     # Text on primary backgrounds in dark mode (default: gray-900)
   accent_dark: '#A78BFA'           # Accent color in dark mode (default: violet-400)
 ```
 
 These values are injected as CSS custom properties, so they automatically apply everywhere the theme references primary/accent colors. You can use any valid CSS hex color value.
+
+### Primary Text Color
+
+The `primary_text` and `primary_dark_text` settings control the text color used on primary-colored backgrounds, such as filled buttons. This ensures readability regardless of your chosen primary color:
+
+- For **dark** primary colors (e.g., `#1E40AF`), use a **light** text color like `#FFFFFF`
+- For **light** primary colors (e.g., `#93C5FD`), use a **dark** text color like `#111827`
+
+These settings are particularly important when customizing the primary color, as the default white text may not provide sufficient contrast on lighter primary backgrounds.
 
 ### Gray Scale
 

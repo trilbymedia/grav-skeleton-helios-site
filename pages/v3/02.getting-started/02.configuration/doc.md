@@ -35,12 +35,16 @@ colors:
   # Light Mode
   primary: '#3B82F6'              # Primary brand color (blue-500)
   primary_hover: '#2563EB'        # Primary hover color (blue-600)
+  primary_text: '#FFFFFF'         # Text color on primary backgrounds (white)
   accent: '#8B5CF6'               # Accent color (violet-500)
   # Dark Mode
   primary_dark: '#60A5FA'         # Primary color for dark mode (blue-400)
   primary_dark_hover: '#93C5FD'   # Primary hover for dark mode (blue-300)
+  primary_dark_text: '#111827'    # Text on primary backgrounds in dark mode (gray-900)
   accent_dark: '#A78BFA'          # Accent color for dark mode (violet-400)
 ```
+
+The `primary_text` and `primary_dark_text` values control the text color on primary-colored backgrounds (e.g., filled buttons). Adjust these when your primary color requires different contrast -- use light text on dark primary colors and dark text on light primary colors.
 
 These map to CSS variables that you can also override directly in custom CSS:
 
@@ -261,10 +265,12 @@ appearance:
 colors:
   primary: '#3B82F6'
   primary_hover: '#2563EB'
+  primary_text: '#FFFFFF'
   accent: '#8B5CF6'
   # Dark Mode
   primary_dark: '#60A5FA'
   primary_dark_hover: '#93C5FD'
+  primary_dark_text: '#111827'
   accent_dark: '#A78BFA'
   # Gray Scale
   gray_preset: zinc
