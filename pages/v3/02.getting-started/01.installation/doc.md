@@ -57,17 +57,11 @@ For API documentation features, also install:
 bin/gpm install api-doc-import
 ```
 
-## Skeleton Installation
+## Skeleton Packages
 
-For a complete demo installation, you can use the Helios Skeleton:
+Looking for Helios demo skeleton packages to get you started? You can [download them directly from GitHub](https://github.com/trilbymedia/grav-skeleton-helios-site?target=_blank) and follow the instructions in the [README.md](https://github.com/trilbymedia/grav-skeleton-helios-site/blob/develop/README.md) file of the repository.
 
-```bash
-# Download and extract the skeleton
-wget https://getgrav.org/download/skeletons/helios-site/latest
-unzip helios-site-*.zip -d my-docs-site
-```
-
-This gives you a ready-to-use documentation site with example content.
+The quickest way to download the files is to simply click the green **Code** button then click the **Download ZIP**.
 
 ## Next Steps
 

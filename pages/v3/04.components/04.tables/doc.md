@@ -58,7 +58,7 @@ Wide tables automatically scroll horizontally on small screens:
 
 Add the striped class for alternating row colors:
 
-<div class="table-striped">
+[div class="table-striped"]
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -68,13 +68,13 @@ Add the striped class for alternating row colors:
 | PUT | `/users/{id}` | Update user |
 | DELETE | `/users/{id}` | Delete user |
 
-</div>
+[/div]
 
 ## Compact Tables
 
 Use the compact class for denser tables:
 
-<div class="table-compact">
+[div class="table-compact"]
 
 | Code | Status | Meaning |
 |------|--------|---------|
@@ -85,7 +85,7 @@ Use the compact class for denser tables:
 | 404 | Not Found | Resource not found |
 | 500 | Server Error | Internal error |
 
-</div>
+[/div]
 
 ## Tables with Code
 
