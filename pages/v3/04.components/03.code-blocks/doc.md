@@ -305,6 +305,7 @@ function sayHello() {
 +   console.log(`${greeting} How are you?`);
 }
 [/codesh]
+
 ## Code Groups
 
 Display multiple code examples in a tabbed interface. Perfect for showing the same functionality in different languages.
