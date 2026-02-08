@@ -6,7 +6,7 @@ taxonomy:
 
 # Callouts
 
-Callouts (also known as alerts or admonitions) help highlight important information in your documentation. Helios uses GitHub-flavored markdown alert syntax for callouts.
+Callouts (also known as alerts or admonitions) help highlight important information in your documentation. Helios uses the `github-markdown-alerts` plugin for callouts support, so please install it first.
 
 ## Available Types
 

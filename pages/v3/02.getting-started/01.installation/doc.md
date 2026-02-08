@@ -41,6 +41,7 @@ Helios works best with the following plugins:
 | SimpleSearch | Yes | Powers the search functionality |
 | Shortcode Core | Recommended | Enables shortcode syntax for callouts and tabs |
 | SVG Icons | Recommended | Provides icon support throughout the theme |
+| Github Markdown Alerts | Recommended | Required for callout support |
 | Codesh | Recommended | Server-side syntax highlighting with 200+ languages and VS Code themes |
 | Page TOC | Recommended | Generates table of contents from headings |
 | API Doc Import | Optional | Import OpenAPI/Swagger specs as API documentation pages |
@@ -48,7 +49,7 @@ Helios works best with the following plugins:
 Install the recommended plugins via GPM:
 
 ```bash
-bin/gpm install simplesearch shortcode-core svg-icons codesh page-toc
+bin/gpm install simplesearch shortcode-core svg-icons github-markdown-alerts codesh page-toc
 ```
 
 For API documentation features, also install:

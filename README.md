@@ -37,7 +37,7 @@ This skeleton serves as a basic content skeleton for demonstrating a powerful do
 11. For **Helios Demo** skeleton run this command to install all the themes + plugins:
 
     ```shell
-    bin/gpm install error codesh form page-toc shortcode-core sitemap svg-icons simplesearch
+    bin/gpm install error codesh form page-toc shortcode-core github-markdown-alerts sitemap svg-icons simplesearch
     ```
 
 Your site should have everything it needs to replicate the **Helios Demo** skeleton site.  Please compare your local copy to the [Helios Demo Demo Site](https://demo.getgrav.org/helios).
