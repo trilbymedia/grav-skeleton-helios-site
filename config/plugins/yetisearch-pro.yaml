@@ -1,6 +1,6 @@
 # Helios-specific yetisearch configuration
 # Adds versioning field support (version added via onYetisearchBuildDocument event)
-
+enabled: true
 indexes:
   pages:
     options:
