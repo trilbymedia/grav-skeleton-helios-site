@@ -4,13 +4,29 @@ icon: tabler/home-2.svg
 body_classes: 'title-center title-h1h2'
 ---
 
-# Helios Documentation Theme
+# Helios Publisher Bundle
 
-A modern, feature-rich documentation theme for Grav CMS built on **Tailwind CSS 4** and **Alpine.js**.
+Transform your documentation workflow with the complete Grav publishing solution. The Publisher bundle combines the **Helios Theme**, **Editor Pro**, and **Revisions Pro** into a professional content publishing platform — bridging the gap between static site generators and traditional CMSs.
+
+Edit in the browser, see changes instantly. No build step, no command line, no deployment pipeline. Your team is publishing in minutes, not days.
+
+## What's Included
+
+[doc-grid columns=3]
+[doc-card title="Helios Theme" icon="tabler/layout-columns.svg" link="/v3/getting-started/installation"]
+A beautiful three-column documentation layout built on Tailwind CSS 4, with sidebar navigation, content area, and auto-generated table of contents.
+[/doc-card]
+[doc-card title="Editor Pro" icon="tabler/pencil.svg"]
+An intuitive visual block editor that preserves Markdown structure while providing real-time preview. Edit content visually without sacrificing the portability of Markdown files.
+[/doc-card]
+[doc-card title="Revisions Pro" icon="tabler/history.svg"]
+Professional version control built into your workflow. Track every change, compare versions side-by-side, and restore content with confidence — all from within the admin interface.
+[/doc-card]
+[/doc-grid]
 
 [doc-grid]
 [doc-card title="Getting Started" icon="tabler/rocket.svg" link="/v3/getting-started/installation"]
-Install and configure Helios in minutes with our step-by-step guide.
+Install and configure the Publisher bundle in minutes with our step-by-step guide.
 [/doc-card]
 [doc-card title="Explore Components" icon="tabler/components.svg" link="/v3/components"]
 Discover callouts, cards, tabs, code blocks, and more.
@@ -19,7 +35,34 @@ Discover callouts, cards, tabs, code blocks, and more.
 
 ---
 
-## Core Features
+## Why Choose This Over Docusaurus or Astro Starlight?
+
+[doc-grid columns=3]
+[doc-card title="No Build Step" icon="tabler/bolt.svg"]
+Static generators require Node.js, npm, build processes, and deployment pipelines. With Grav, edit in the browser and see changes instantly.
+[/doc-card]
+[doc-card title="Visual Editing" icon="tabler/eye.svg"]
+A friendly WYSIWYM interface that feels like a word processor but generates clean Markdown. Team members contribute without training.
+[/doc-card]
+[doc-card title="File-Based Freedom" icon="tabler/files.svg"]
+Same file-based architecture as static sites — easy to backup, version, and migrate — plus a polished admin UI. Best of both worlds.
+[/doc-card]
+[doc-card title="Built-In History" icon="tabler/history.svg"]
+Visual revision comparison and one-click restore accessible to everyone, not just developers. No Git expertise required.
+[/doc-card]
+[doc-card title="Instant Publishing" icon="tabler/send.svg"]
+Edit, save, done. Changes are live immediately with rollback safety from Revisions Pro. No pull-request-and-deploy cycle.
+[/doc-card]
+[doc-card title="Easy Onboarding" icon="tabler/user-plus.svg"]
+Send a login link. No need to teach Git, Node.js, or framework-specific conventions. Your team is productive immediately.
+[/doc-card]
+[/doc-grid]
+
+---
+
+## Helios Theme Features
+
+### Core Features
 
 [doc-grid columns=3]
 [doc-card title="Three-Column Layout" icon="tabler/layout-columns.svg"]
@@ -33,7 +76,7 @@ Optimized for desktop, tablet, and mobile with collapsible navigation.
 [/doc-card]
 [/doc-grid]
 
-## Appearance & Theming
+### Appearance & Theming
 
 [doc-grid columns=3]
 [doc-card title="5 Color Presets" icon="tabler/palette.svg"]
@@ -47,43 +90,7 @@ Small, medium, or large font sizes. Adjustable sidebar, content, and TOC widths.
 [/doc-card]
 [/doc-grid]
 
-## Search
-
-[doc-grid]
-[doc-card title="SimpleSearch" icon="tabler/search.svg"]
-Built-in real-time full-text search with keyboard shortcuts (Cmd+K / Ctrl+K).
-[/doc-card]
-[doc-card title="YetiSearch Pro" icon="tabler/search-code.svg"]
-Advanced fuzzy matching, chunked indexing, and relevance scoring for larger sites.
-[/doc-card]
-[/doc-grid]
-
-## Code Blocks
-
-Powered by the **Codesh** plugin with server-side syntax highlighting.
-
-[doc-grid columns=3]
-[doc-card title="200+ Languages" icon="tabler/code.svg"]
-JavaScript, Python, PHP, Ruby, Go, Rust, SQL, YAML, and many more.
-[/doc-card]
-[doc-card title="70+ Themes" icon="tabler/brush.svg"]
-GitHub, Dracula, Nord, One Dark Pro, Tokyo Night, Catppuccin, and more.
-[/doc-card]
-[doc-card title="Line Features" icon="tabler/list-numbers.svg"]
-Line numbers, highlighting, focus mode, and diff visualization.
-[/doc-card]
-[doc-card title="Code Groups" icon="tabler/folders.svg"]
-Synced tabs for multi-file examples that stay in sync across the page.
-[/doc-card]
-[doc-card title="Filename Display" icon="tabler/file-code.svg"]
-Show file context in the header with optional language badges.
-[/doc-card]
-[doc-card title="Auto Theme Switch" icon="tabler/toggle-right.svg"]
-Automatically adapts to light or dark mode.
-[/doc-card]
-[/doc-grid]
-
-## Documentation Components
+### Documentation Components
 
 [doc-grid columns=3]
 [doc-card title="Callouts" icon="tabler/alert-circle.svg" link="/v3/components/callouts"]
@@ -106,69 +113,60 @@ Tabler, Heroicons, Bootstrap, Lucide, and more icon sets available.
 [/doc-card]
 [/doc-grid]
 
-## API Documentation
+### Code Blocks
 
-[doc-grid]
-[doc-card title="Endpoint Templates" icon="tabler/api.svg" link="/v3/api-reference"]
-Method badges (GET, POST, PUT, DELETE), endpoint paths, and parameter tables.
-[/doc-card]
-[doc-card title="Request & Response" icon="tabler/code-dots.svg"]
-JSON-formatted examples with syntax highlighting and response code documentation.
-[/doc-card]
-[/doc-grid]
-
-## Versioning
-
-[doc-grid]
-[doc-card title="Folder-Based Versions" icon="tabler/git-branch.svg" link="/v3/guides/versioning"]
-Organize docs by version (v1/, v2/, v3/) with automatic detection or manual configuration.
-[/doc-card]
-[doc-card title="Smart Switching" icon="tabler/switch-horizontal.svg"]
-Version dropdown in sidebar with URL preservation when switching between versions.
-[/doc-card]
-[/doc-grid]
-
-## Navigation & Structure
+Powered by the **Codesh** plugin with server-side syntax highlighting.
 
 [doc-grid columns=3]
+[doc-card title="200+ Languages" icon="tabler/code.svg"]
+JavaScript, Python, PHP, Ruby, Go, Rust, SQL, YAML, and many more.
+[/doc-card]
+[doc-card title="70+ Themes" icon="tabler/brush.svg"]
+GitHub, Dracula, Nord, One Dark Pro, Tokyo Night, Catppuccin, and more.
+[/doc-card]
+[doc-card title="Line Features" icon="tabler/list-numbers.svg"]
+Line numbers, highlighting, focus mode, and diff visualization.
+[/doc-card]
+[/doc-grid]
+
+### Search, Navigation & More
+
+[doc-grid columns=3]
+[doc-card title="Full-Text Search" icon="tabler/search.svg"]
+Built-in real-time search with keyboard shortcuts (Cmd+K / Ctrl+K).
+[/doc-card]
 [doc-card title="Auto Sidebar" icon="tabler/layout-sidebar.svg"]
 Generated from folder hierarchy with numeric ordering and collapsible sections.
 [/doc-card]
 [doc-card title="Scroll Spy TOC" icon="tabler/list-tree.svg"]
 Right-side table of contents with active section highlighting as you scroll.
 [/doc-card]
-[doc-card title="Breadcrumbs" icon="tabler/bread.svg"]
-Full navigation path display with configurable separators.
+[doc-card title="Versioning" icon="tabler/git-branch.svg" link="/v3/guides/versioning"]
+Folder-based version organization with automatic detection and smart switching.
 [/doc-card]
-[/doc-grid]
-
-## Additional Features
-
-[doc-grid columns=3]
+[doc-card title="API Documentation" icon="tabler/api.svg" link="/v3/api-reference"]
+Method badges, endpoint paths, parameter tables, and response examples.
+[/doc-card]
 [doc-card title="GitHub Integration" icon="tabler/brand-github.svg"]
 Edit links to your repository with customizable text and branch settings.
-[/doc-card]
-[doc-card title="HTMX Navigation" icon="tabler/bolt.svg"]
-Optional SPA-like experience with XHR content loading.
-[/doc-card]
-[doc-card title="Prev/Next Links" icon="tabler/arrows-left-right.svg"]
-Navigate between pages at the bottom of each content area.
 [/doc-card]
 [/doc-grid]
 
 ---
 
-## Quick Start
+## Perfect For
 
-```bash
-# Install the theme
-bin/gpm install helios
-
-# Set as active theme
-bin/grav theme helios
-```
-
-Or manually download and extract to your `user/themes/helios` folder.
+[doc-grid columns=3]
+[doc-card title="Documentation Teams" icon="tabler/users.svg"]
+Markdown portability without forcing everyone to become developers.
+[/doc-card]
+[doc-card title="Product Companies" icon="tabler/building.svg"]
+Fast content updates without deployment delays.
+[/doc-card]
+[doc-card title="Open Source Projects" icon="tabler/brand-open-source.svg"]
+Community contributions without requiring Git expertise.
+[/doc-card]
+[/doc-grid]
 
 ---
 
