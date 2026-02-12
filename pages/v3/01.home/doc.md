@@ -4,15 +4,15 @@ icon: tabler/home-2.svg
 body_classes: 'title-center title-h1h2'
 ---
 
-# Helios Publisher Bundle
+# Helios Publisher Pro Bundle
 
-Transform your documentation workflow with the complete Grav publishing solution. The Publisher bundle combines the **Helios Theme**, **Editor Pro**, and **Revisions Pro** into a professional content publishing platform — bridging the gap between static site generators and traditional CMSs.
+Transform your documentation workflow with the complete Grav publishing solution. The Publisher Pro bundle combines the **Helios Theme**, **Editor Pro**, **Revisions Pro**, and **YetiSearch Pro** into a professional content publishing platform — bridging the gap between static site generators and traditional CMSs.
 
 Edit in the browser, see changes instantly. No build step, no command line, no deployment pipeline. Your team is publishing in minutes, not days.
 
 ## What's Included
 
-[doc-grid columns=3]
+[doc-grid columns=2]
 [doc-card title="Helios Theme" icon="tabler/layout-columns.svg" link="/v3/getting-started/installation"]
 A beautiful three-column documentation layout built on Tailwind CSS 4, with sidebar navigation, content area, and auto-generated table of contents.
 [/doc-card]
@@ -21,6 +21,9 @@ An intuitive visual block editor that preserves Markdown structure while providi
 [/doc-card]
 [doc-card title="Revisions Pro" icon="tabler/history.svg"]
 Professional version control built into your workflow. Track every change, compare versions side-by-side, and restore content with confidence — all from within the admin interface.
+[/doc-card]
+[doc-card title="YetiSearch Pro" icon="tabler/search.svg"]
+A super-fast indexing search engine with advanced fuzzy matching, chunked indexing, relevance scoring, and geo-spatial search support for lightning-fast results on sites of any size.
 [/doc-card]
 [/doc-grid]
 
