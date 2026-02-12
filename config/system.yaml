@@ -19,13 +19,5 @@ errors:
   log: true
 
 debugger:
-  enabled: true
+  enabled: false
   provider: clockwork
-
-gpm:
-  releases: testing
-  verify_peer: true
-
-updates:
-  safe_upgrade: true
-  safe_upgrade_snapshot_limit: 5
