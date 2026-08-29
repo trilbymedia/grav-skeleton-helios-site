@@ -92,6 +92,18 @@ Combining multiple options:
 ```
 [/raw]
 
+## Animated Images
+
+The lightbox works with animated formats too — animated WebPs and GIFs both play in the lightbox overlay. WebP is generally preferred because it's smaller for equivalent quality:
+
+[doc-image src="feathers-mcgraw.webp" alt="Feathers McGraw" caption="Animated WebP — plays in the page and in the lightbox" border=true shadow=true width="320px"]
+
+[raw]
+```markdown
+[doc-image src="feathers-mcgraw.webp" alt="Feathers McGraw" caption="Animated WebP" border=true shadow=true width="320px"]
+```
+[/raw]
+
 ## Lightbox Controls
 
 When clicking an image with lightbox enabled:
