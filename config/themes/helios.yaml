@@ -16,9 +16,17 @@ versioning:
 # Header menu
 header:
   menu:
+    # The sample course: only shown on a site running KahunaCart and
+    # Subscriptions (the course page asks for them with requires_plugins).
+    - route: /writing-docs
+      label: Course
     - route: /privacy
       label: Privacy
     - route: /contact
       label: Contact
     - route: /copyright
       label: Copyright
+
+# Courses: Join buttons on the sample course go to the membership page
+courses:
+  membership_route: /membership
