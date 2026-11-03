@@ -23,3 +23,5 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+/config/security-private.php
+/config/security.yaml
